@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Profile </title>
+	<link rel="stylesheet" href="navigasi.css">
+</head>
+
+<header>
+	<div class="judul">My Profile</div>
+		<ul>
+  <li><a class="active" href="index.html">Beranda</a></li>
+  <li><a class="active" href="hoby.html">Hobby</a></li>
+  <li><a class="active" href="cita.html">Cita-cita</a></li>
+</ul>
+</header>
+
+	<body>
+<section>
+  <img class="mySlides" src="hoby1.jpg"
+  style="width:50%" align="right">
+  <img class="mySlides" src="hoby2.jpg"
+  style="width:50%" align="right">
+  <img class="mySlides" src="hoby3.jpg"
+  style="width:50%" align="right">
+</section>
+
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:100%">
+  <h1>My Profile</h1>
+  <p> Hoby saya dari kecil adalah olahraga, mulai dari joging, berenang, maupun bela diri.</p>
+  <p> </p>
+</section>
+
+<!-- Band Members -->
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+</body>
+	</div>
+</html>
